@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>实验</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ContainerServlet</display-name>
+    <servlet-name>ContainerServlet</servlet-name>
+    <servlet-class>com.yj.web.ContainerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContainerServlet</servlet-name>
+    <url-pattern>/containerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddRenterServlet</display-name>
+    <servlet-name>AddRenterServlet</servlet-name>
+    <servlet-class>com.yj.web.AddRenterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddRenterServlet</servlet-name>
+    <url-pattern>/addRenterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddRenterHasServlet</display-name>
+    <servlet-name>AddRenterHasServlet</servlet-name>
+    <servlet-class>com.yj.web.AddRenterHasServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddRenterHasServlet</servlet-name>
+    <url-pattern>/addRenterHasServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BaseServlet</display-name>
+    <servlet-name>BaseServlet</servlet-name>
+    <servlet-class>com.yj.web.BaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BaseServlet</servlet-name>
+    <url-pattern>/BaseServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
